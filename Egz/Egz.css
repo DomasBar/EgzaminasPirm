@@ -1,0 +1,362 @@
+html {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Logo */
+
+header a #logo {
+    width: 200px;
+    padding: 2em 0 0.5em 0;
+}
+
+#fulltop {
+    display: flex;
+    flex-direction: row;
+    margin: 5em 0 3em 0;
+}
+
+#top-l {
+    display: inline-block;
+    width: 60%;
+    height: 100%;
+}
+
+#top-r {
+    display: flex;
+    width: 50%;
+    height: 500px;
+}
+
+@media screen and (min-width:501px) {
+    #top-r {
+        transform: scale(1.5);
+    }
+    .wrapper:first-child {
+        margin-bottom: 0;
+    }
+}
+
+
+/* Bottom */
+#fullbottom {
+    display: flex;
+    flex-direction: row;
+    margin: 5em 0 3em 0;
+}
+
+#bottom-l {
+    display: inline-block;
+    width: 60%;
+    height: 100%;
+}
+
+#bottom-r {
+    /* position: absolute; */
+    display: flex;
+    width: 50%;
+    height: 500px;
+}
+
+@media screen and (max-width: 500px) {
+    #bottom-r {
+        transform: scale(0.75);
+    }
+}
+
+/* Footer */
+#socialsandcontacts {
+    color: rgb(92, 91, 91);
+}
+
+#socials {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    padding-left: 0;
+
+}
+footer li {
+    padding-left: 1em;
+}
+footer li:nth-child(1) {
+    padding-left: 0px;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    width: 50%;
+    height: 100%;
+}
+
+#contact2, #contact4 {
+    padding-left: 5em;
+}
+
+#contacts a {
+    color: rgb(148, 147, 147);
+    text-decoration: none;
+}
+
+#copyright {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 3em;
+    color: rgb(148, 147, 147);
+}
+
+@media screen and (min-width:505px) {
+    #contacts {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #copyright {
+        justify-content: space-between;
+    }
+    #socialsandcontacts {
+        display: flex;
+        justify-content: space-between;
+    }
+    #contact2, #contact4 {
+        padding-left: 0;
+    }
+    
+}
+
+
+@media screen and (max-width:500px) {
+    #contacts {
+        display: grid;
+        grid-template-areas:
+        "contact1 contact2"
+        "contact3 contact4";
+    }
+    #copyright2 {
+        display: none;
+    }
+}
+
+
+/* Wrapper/Div */
+
+
+.wrapper {
+    margin: 1em;
+    padding: 0 1.25em;
+}
+
+.pagrdiv {
+    width: 100%;
+    /* border: 1px solid green */
+}
+
+
+/* Žodžiai */
+
+#top-signup {
+    color: rgb(238, 130, 148);
+}
+
+header div {
+    display: flex;
+    width: 100%;
+}
+.features {
+    flex-wrap: wrap;
+    font-size: large;
+    margin: 0 2em 0 0;
+    text-decoration: none;
+    line-height: 2em;
+}
+.features:last-child {
+    margin: 0;
+}
+r div:nth-child(1) {
+    justify-content: start;
+}
+body header div:nth-child(2) {
+    justify-content: flex-end;
+}
+.Launching {
+    color: rgb(238, 130, 148);
+    text-transform: uppercase;
+    font-weight: 700 bold;
+}
+
+.h1fat {
+    font-weight:  900, Black;
+}
+
+.h1slim {
+    font-weight: 500, medium;
+}
+
+p, a {
+    color: rgb(119, 117, 117);
+}
+
+@media screen and (max-width:600px) {
+    .features {
+        display: none;
+    }
+    .h1fat {
+        font-size: 40px;
+    }
+    .h1slim {
+        font-size: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:500px) {
+    .h1fat {
+        font-size: 70px;
+    }
+    .h1slim {
+        font-size: 40px;
+    }
+}
+
+/* Button */
+
+.button {
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 1em 2em 1em 2em;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 2em;
+    border-top-color: green;
+    border-left-color: blue;
+    border-right-color: pink;
+    border-bottom-color: yellow;
+
+}
+
+/* Background */
+
+#backgroundtop {
+    width: 100%;
+    background-image: url(background.svg);
+    background-size: cover;
+    padding: 4em 1em 1em 0;
+    margin-top: 3em;
+    text-align: start;
+}
+
+.coloredwords {
+    padding-left: 15px;
+}
+
+@media screen and (max-width:400px) {
+    #backgroundtop {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width:500px) {
+    #backgroundtop {
+        width: 100%;
+        padding: 4em 1em 1em 1em;
+        margin: 0 1em 0 1em;
+        text-align: start;
+    }
+}
+
+
+/* Companies */
+
+#companies {
+    width: 100%;
+    margin: 4em 0 4em 0;
+}
+
+#comp {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2em 2em 0;
+}
+
+@media screen and (min-width:400px) {
+    #comp {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:510px) {
+    #Boomerang {
+        display: none;
+    }
+
+    #OpenDoor {
+        display: none;
+    }
+}
+
+@media screen and (min-width:509px) {
+    #Boom {
+        display: none;
+    }
+}
+
+/* Pictures */
+#pictures {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.bg-mid {
+    background-color: rgb(241, 238, 238);
+    border-radius: 10px;
+    margin-left: 2em;
+    justify-content: space-between;
+}
+
+.midwords {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.midwords .mid-l {
+    text-align: left;
+    padding-left: 1em;
+}
+
+.midwords .mid-r {
+    text-align: end;
+    padding-left: 1.5em;
+}
+
+.bg-mid:nth-child(1) {
+    margin-left: 0;
+}
+
+/* Pictures Zodziai */
+
+.gloop {
+    color: orange;
+}
+
+.pilka {
+    color: grey;
+}
+/* Žodžiu Font-Weight/Size */
